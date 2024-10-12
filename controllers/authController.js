@@ -74,10 +74,18 @@ const login = async (req, res) => {
       algorithm: 'HS256',  
       expiresIn: 86400,    
     });
+    console.log(token);
 
     // Return the token and user information
     return res.json({
-      message : "user logged in succesfully"
+      message : "user logged in succesfully",
+      token:token,
+      user : {
+        user : user.id,
+        username : user.username,
+        email : user.email,
+        role : user.role
+      }
     })
   } catch (error) {
     console.error("Error during login:", error); 

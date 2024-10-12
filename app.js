@@ -9,6 +9,8 @@ import config from './config/auth.js';
 import aboutUsRoutes from "./routes/aboutUsRoute.js";
 import contactUsRoutes from "./routes/contactUsRoutes.js";
 import servicesRoute from "./routes/servicesRoute.js";
+import postRoutes from "./routes/postRoutes.js";
+import commentRoutes from "./routes/commentsRoutes.js";
 
 
 const app = express();
@@ -27,11 +29,12 @@ app.use(session({
     cookie: { secure: false } 
   }));
 app.use('/api/auth', authRoutes); 
-app.use('/', authRoutes);
 app.use('/', userRoutes);
 app.use('/', aboutUsRoutes);
 app.use('/', contactUsRoutes);
 app.use('/',servicesRoute);
+app.use('/', postRoutes);
+app.use('/', commentRoutes);
 
 
 // views
