@@ -45,3 +45,8 @@ To set up and run the project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/blog-system-backend.git
+2. **Navigate to the project directory**:
+   ```bash
+   cd your file location
+3. **Install the dependencies**:
+4. 
