@@ -11,6 +11,7 @@ import contactUsRoutes from "./routes/contactUsRoutes.js";
 import servicesRoute from "./routes/servicesRoute.js";
 import postRoutes from "./routes/postRoutes.js";
 import commentRoutes from "./routes/commentsRoutes.js";
+import reportRouter from "./routes/reportRoutes.js";
 
 
 const app = express();
@@ -35,8 +36,7 @@ app.use('/', contactUsRoutes);
 app.use('/',servicesRoute);
 app.use('/', postRoutes);
 app.use('/', commentRoutes);
-
-
+app.use('/', reportRouter);
 // views
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));

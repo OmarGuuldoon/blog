@@ -35,4 +35,7 @@ db.user.hasMany(db.commentModel, { foreignKey: 'user_id' });
 db.postModel.hasMany(db.commentModel, { foreignKey: 'post_id' });   
 db.commentModel.belongsTo(db.postModel, { foreignKey: 'post_id' }); 
 
+db.postModel.belongsTo(db.user, { foreignKey: 'user_id' });
+db.user.hasMany(db.postModel, { foreignKey: 'user_id' });
+
 export default db;
