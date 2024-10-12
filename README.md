@@ -10,13 +10,21 @@ Contact
 
 Key Features:
 User Authentication: Users can register and log in securely, ensuring that only authorized individuals can create and manage posts.
+
 Post Management: Users can easily create, read, update, and delete blog posts. Each post includes a title, content, and optional images to enhance storytelling.
+
 Comment Functionality: Readers can leave comments on posts, fostering discussion and engagement. Users can also manage their comments, including editing and deleting.
+
 Reporting for Admins: Admin users can generate comprehensive reports on various aspects of the blog, including:
+
 Post Reports: Filter by date range, user.
+
 Comment Reports: Filter by post ID, date range, user.
+
 User Reports: Monitor user registration dates.
+
 Contact Us Reports: Analyze inquiries based on date range.
+
 Scalability: The architecture supports scalability, allowing for future enhancements and integrations as the user base grows.
 
 This Blog System aims to create a vibrant online community where users can share ideas and feedback, enriching the overall user experience and fostering a collaborative environment.
